@@ -6,11 +6,16 @@ const Header = () => {
   return (
     <>
     <header className={styles.header}>
-        <Link href="/dashboard"><h1>Dashboard</h1></Link>
+        <Link href="/dashboard">
+          <div className='hero-logo'>
+          <img src="/logo2.png" alt="" width={70} height={70}/>
+          </div> 
+        </Link>
 
         <div>
+            
+            <p>My Booking</p>
             <p>Logout</p>
-            <Link href="/booking"><p>My Booking</p></Link>
         </div>
     </header>
     </>

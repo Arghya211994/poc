@@ -29,14 +29,19 @@ const data = [
   }
 ]
 
-const Booking = () => {
+const Booking = ({roomdata}) => {
   return (
     <>
     <div className={styles.container}>
-          { data.map((item) => (<div key={item.id}>
+          { roomdata.map((item) => (<div key={item.id}>
             <div className={styles.card}>
-            <p>Location-shimla</p>
-           <Link href={`/booking/${item.id}`}><button>See more</button></Link> 
+            <h1>Conference Room: {item.ConferenceRoom}</h1>
+            <p>Room Size: {item.RoomSize}</p>
+            <p>Air Condition: {item.AirCondition}</p>
+            <p>Sitting Capacity: {item.sittingcapacity}</p>
+            <p>Wifi Availability: {item.WifiAvailability}</p>
+            <p></p>
+           <Link href={`/booking/${item.id}`}><button>Book Now</button></Link> 
           </div>
           </div>))}
           </div>

@@ -5,10 +5,6 @@
   font-family: sans-serif;
 }
 
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-react-calendars/styles/material.css";
-
 .index{
   padding: 40px;
   display: flex;
@@ -213,4 +209,11 @@
 }
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: rgb(238 242 255);
+}
+
+.datatable{
+  border: 1px solid rgba(0,0,0,0.3);
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
 }

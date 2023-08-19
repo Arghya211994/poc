@@ -108,10 +108,11 @@ const BookingDetail = () => {
 
   const [value, onChange] = useState(new Date());
   const [appointments, setAppointments] = useState({
-    '2023-06-25': ['9:00', '10:00'],
-    '2023-06-26': [],
-    '2023-06-27': ['11:00', '14:00', '16:00'],
-    '2023-06-19': ['12:05', '2:08', '8:00', '9:10']
+    '2023-08-25': ['9:00', '10:00','12:00',"3:00","5:15"],
+    '2023-08-26': [],
+    '2023-08-27': ['11:00', '14:00', '16:00'],
+    '2023-08-19': ['12:05', '2:08', '8:00', '9:10'],
+    '2023-08-20': ['9:00', '10:00']
   });
 
   console.log(value)
@@ -149,11 +150,12 @@ const BookingDetail = () => {
       <div className={styles.calender}>
 
         <h1 style={{ marginBlock: "40px" }}>Calender</h1>
-        <div>
+        <div className={styles.calender2}>
           <DynamicCalendar
             onChange={handleDateChange}
             value={value}
           />
+          <div>
           <h2 className={styles.h2}>Available times for {formatDate(value)}</h2>
           <div className={styles.timebox}>
             {appointments[formatDate(value)] ? (
@@ -172,7 +174,7 @@ const BookingDetail = () => {
             )}
             
           </div>
-
+          </div>
         </div>
       </div>
     </>

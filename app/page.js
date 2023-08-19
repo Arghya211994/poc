@@ -1,5 +1,4 @@
 import React from 'react'
-import { CalendarComponent } from '@syncfusion/ej2-react-calendars'
 import Link from 'next/link'
 
 const page = () => {
