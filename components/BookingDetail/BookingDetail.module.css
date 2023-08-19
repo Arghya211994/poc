@@ -1,42 +1,43 @@
-.calender{
-    padding: 40px;
-}
-
-.calender h1{
-    margin-bottom: 30px;
-}
-
-.calender h3{
+.timebox{
     margin-top: 30px;
-}
-
-.timeslot{
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
-.timeslot > div{
-    display: flex;
-    align-items: center;
-    gap: .3rem;
-    border: 1px solid rgba(0,0,0,0.7);
-    padding: 6px 15px;
-    margin-top: 30px;
-    border-radius: 6px;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+
+.timeslot{
+   background-color: #4f46e5;
+   padding: 6px 15px;
+   color: white;
+   border-radius: 6px;
+   box-shadow: 0px 0px 8px #4f46e5;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   cursor: pointer;
 }
 
 .timeslot input{
+    accent-color: black;
+    border: 1px solid white;
     cursor: pointer;
 }
 
-.timeslot button{
-    background-color: rgba(0,0,0,0.9);
-    color: white;
-    border-radius: 6px;
-    border: none;
-    height: 35px;
-    cursor: pointer;
-    padding-inline: 15px;
-    margin-top: 30px;
+.h2{
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.calender{
+    padding: 20px 30px;
+}
+
+.btn{
+   /* background-color: #e54678; */
+   padding: 8px 18px;
+   color: white;
+   border-radius: 6px;
+   box-shadow: 0px 0px 8px #e54678;
+   border: none;
+   cursor: pointer;
 }
